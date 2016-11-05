@@ -1,0 +1,71 @@
+Expression 1: T
+  Correct Answer: T
+  Your Answer:    T
+Expression 2: NIL
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 3: A
+  Correct Answer: T
+  Your Answer:    T
+Expression 4: (AND T)
+  Correct Answer: T
+  Your Answer:    T
+Expression 5: (AND NIL)
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 6: (AND A B)
+  Correct Answer: T
+  Your Answer:    T
+Expression 7: (OR T)
+  Correct Answer: T
+  Your Answer:    T
+Expression 8: (OR NIL)
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 9: (OR A B)
+  Correct Answer: T
+  Your Answer:    T
+Expression 10: (AND A (NOT A))
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 11: (AND A (OR (NOT A) B))
+  Correct Answer: T
+  Your Answer:    T
+Expression 12: (AND A B (OR (NOT A) (NOT B)))
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 13: (AND (OR A B C) (NOT B) (OR (NOT A) C) (OR A D) (NOT C))
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 14: (AND (NOT A) (NOT B) (NOT C) (NOT D) (NOT E) (NOT F) (NOT G) (NOT H) (NOT I) (NOT J) (OR A B C D E F G H I J K))
+  Correct Answer: T
+  Your Answer:    T
+Expression 15: 
+(AND (OR A B C D E F G H I J K L M N O P Q R S U V)
+ (OR (NOT A) (NOT B) (NOT C) (NOT D) (NOT E) (NOT F) (NOT G) (NOT H) (NOT I) (NOT J) K (NOT L) (NOT M) (NOT N) (NOT O)
+  (NOT P) (NOT Q) (NOT R) (NOT S) (NOT U) (NOT V)))
+  Correct Answer: T
+  Your Answer:    T
+Expression 16: (AND (OR A B C D E) (OR (NOT A) B C D E) (OR (NOT B) C D E) (OR (NOT C) D E) (OR (NOT D) E) (NOT E))
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 17: (AND (NOT A) (OR A B C D) (OR (NOT B) (NOT D)) D (OR B C))
+  Correct Answer: T
+  Your Answer:    T
+Expression 18: (AND (NOT A) (OR A B C D) (OR (NOT B) (NOT D)) D (OR B C) (NOT C))
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 19: 
+(AND (OR A B C D E F G H I J K) (OR (NOT A) B C D E F G H I J K) (OR (NOT B) C D E F G H I J K) (OR (NOT C) D E F G H I J K)
+ (OR (NOT D) E F G H I J K) (OR (NOT E) F G H I J K) (OR (NOT F) G H I J K) (OR (NOT G) H I J K) (OR (NOT H) I J K)
+ (OR (NOT I) J K) (OR (NOT J) K) (NOT K))
+  Correct Answer: NIL
+  Your Answer:    NIL
+Expression 20: 
+(AND (OR A B (NOT C) (NOT D) E) (OR B C (NOT D) E (NOT K)) (OR (NOT B) D E K (NOT G)) (OR (NOT A) (NOT E))
+ (OR F (NOT G) H (NOT J) (NOT K)) (OR (NOT B) C D (NOT E) F I) (OR (NOT D) (NOT E) F K) (OR A (NOT C) (NOT F) K)
+ (OR J K (NOT H)) (OR (NOT A) F (NOT K)) (OR B (NOT D) F H) (OR A (NOT R) (NOT I) F) (OR (NOT X) (NOT Y) (NOT Z))
+ (OR S (NOT U) X) (OR Q R (NOT V)) (OR (NOT C) D (NOT G) H (NOT J) K) (OR P (NOT Q) (NOT R) S (NOT U)) (OR (NOT A) (NOT X))
+ (OR G (NOT I) (NOT P)))
+  Correct Answer: T
+  Your Answer:    NIL

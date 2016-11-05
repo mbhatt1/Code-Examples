@@ -1,0 +1,395 @@
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cake.pddl   -p tests/do_nothing.pddl       -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cake
+Problem:  do_nothing
+Result:   success
+Visited:  0
+Expanded: 0
+Time:     0:0:16
+Solution: 
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cake.pddl   -p tests/eat_cake.pddl         -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cake
+Problem:  eat_cake
+Result:   success
+Visited:  1
+Expanded: 2
+Time:     0:0:0
+Solution: 
+  (eat cake)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cake.pddl   -p tests/have_eat_cake.pddl    -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cake
+Problem:  have_eat_cake
+Result:   success
+Visited:  2
+Expanded: 4
+Time:     0:0:0
+Solution: 
+  (eat cake)
+  (bake cake)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/easy_stack.pddl       -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  easy_stack
+Result:   success
+Visited:  1
+Expanded: 8
+Time:     0:0:0
+Solution: 
+  (move a table b)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/easy_unstack.pddl     -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  easy_unstack
+Result:   success
+Visited:  1
+Expanded: 2
+Time:     0:0:0
+Solution: 
+  (moveToTable a b)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/sussman.pddl          -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  sussman
+Result:   success
+Visited:  3
+Expanded: 30
+Time:     0:0:16
+Solution: 
+  (moveToTable c a)
+  (move b table c)
+  (move a table b)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/reverse_2.pddl        -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  reverse_2
+Result:   success
+Visited:  2
+Expanded: 10
+Time:     0:0:0
+Solution: 
+  (moveToTable a b)
+  (move b table a)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/reverse_4.pddl        -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  reverse_4
+Result:   success
+Visited:  6
+Expanded: 74
+Time:     0:0:16
+Solution: 
+  (moveToTable a b)
+  (moveToTable b c)
+  (moveToTable c d)
+  (move b table a)
+  (move c table b)
+  (move d table c)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/reverse_6.pddl        -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  reverse_6
+Result:   success
+Visited:  10
+Expanded: 250
+Time:     0:0:78
+Solution: 
+  (moveToTable a b)
+  (moveToTable b c)
+  (moveToTable c d)
+  (moveToTable d e)
+  (moveToTable e f)
+  (move b table a)
+  (move c table b)
+  (move d table c)
+  (move e table d)
+  (move f table e)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/reverse_8.pddl        -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  reverse_8
+Result:   success
+Visited:  14
+Expanded: 602
+Time:     0:0:234
+Solution: 
+  (moveToTable a b)
+  (moveToTable b c)
+  (moveToTable c d)
+  (moveToTable d e)
+  (moveToTable e f)
+  (moveToTable f g)
+  (moveToTable g h)
+  (move b table a)
+  (move c table b)
+  (move d table c)
+  (move e table d)
+  (move f table e)
+  (move g table f)
+  (move h table g)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/reverse_10.pddl       -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  reverse_10
+Result:   success
+Visited:  18
+Expanded: 1194
+Time:     0:0:657
+Solution: 
+  (moveToTable a b)
+  (moveToTable b c)
+  (moveToTable c d)
+  (moveToTable d e)
+  (moveToTable e f)
+  (moveToTable f g)
+  (moveToTable g h)
+  (moveToTable h i)
+  (moveToTable i j)
+  (move b table a)
+  (move c table b)
+  (move d table c)
+  (move e table d)
+  (move f table e)
+  (move g table f)
+  (move h table g)
+  (move i table h)
+  (move j table i)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/blocks.pddl -p tests/reverse_12.pddl       -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   blocks
+Problem:  reverse_12
+Result:   success
+Visited:  22
+Expanded: 2090
+Time:     0:1:375
+Solution: 
+  (moveToTable a b)
+  (moveToTable b c)
+  (moveToTable c d)
+  (moveToTable d e)
+  (moveToTable e f)
+  (moveToTable f g)
+  (moveToTable g h)
+  (moveToTable h i)
+  (moveToTable i j)
+  (moveToTable j k)
+  (moveToTable k l)
+  (move b table a)
+  (move c table b)
+  (move d table c)
+  (move e table d)
+  (move f table e)
+  (move g table f)
+  (move h table g)
+  (move i table h)
+  (move j table i)
+  (move k table j)
+  (move l table k)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cargo.pddl  -p tests/deliver_1.pddl        -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cargo
+Problem:  deliver_1
+Result:   success
+Visited:  3
+Expanded: 18
+Time:     0:0:0
+Solution: 
+  (load cargo_msy plane_atl atl)
+  (fly plane_atl atl msy)
+  (unload cargo_msy plane_atl msy)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cargo.pddl  -p tests/deliver_2.pddl        -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cargo
+Problem:  deliver_2
+Result:   success
+Visited:  7
+Expanded: 56
+Time:     0:0:0
+Solution: 
+  (load cargo_msy_1 plane_atl atl)
+  (load cargo_msy_2 plane_atl atl)
+  (fly plane_atl atl msy)
+  (unload cargo_msy_1 plane_atl msy)
+  (unload cargo_msy_2 plane_atl msy)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cargo.pddl  -p tests/deliver_3.pddl        -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cargo
+Problem:  deliver_3
+Result:   success
+Visited:  29
+Expanded: 494
+Time:     0:0:62
+Solution: 
+  (load cargo_msy plane_sfo sfo)
+  (load cargo_sfo plane_atl atl)
+  (fly plane_sfo sfo msy)
+  (unload cargo_msy plane_sfo msy)
+  (load cargo_atl plane_sfo msy)
+  (fly plane_sfo msy atl)
+  (fly plane_atl atl sfo)
+  (unload cargo_atl plane_sfo atl)
+  (unload cargo_sfo plane_atl sfo)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cargo.pddl  -p tests/deliver_4.pddl        -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cargo
+Problem:  deliver_4
+Result:   success
+Visited:  205
+Expanded: 4548
+Time:     0:0:359
+Solution: 
+  (load cargo_msy plane_sfo sfo)
+  (fly plane_sfo sfo msy)
+  (load cargo_atl plane_sfo msy)
+  (unload cargo_msy plane_sfo msy)
+  (load cargo_sfo plane_atl atl)
+  (load cargo_dfw plane_sfo msy)
+  (fly plane_atl atl sfo)
+  (fly plane_sfo msy atl)
+  (unload cargo_sfo plane_atl sfo)
+  (unload cargo_atl plane_sfo atl)
+  (fly plane_sfo atl dfw)
+  (unload cargo_dfw plane_sfo dfw)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cargo.pddl  -p tests/deliver_return_1.pddl -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cargo
+Problem:  deliver_return_1
+Result:   success
+Visited:  7
+Expanded: 42
+Time:     0:0:0
+Solution: 
+  (load cargo_msy plane_atl atl)
+  (fly plane_atl atl msy)
+  (unload cargo_msy plane_atl msy)
+  (fly plane_atl msy atl)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cargo.pddl  -p tests/deliver_return_2.pddl -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cargo
+Problem:  deliver_return_2
+Result:   success
+Visited:  13
+Expanded: 104
+Time:     0:0:16
+Solution: 
+  (load cargo_msy_1 plane_atl atl)
+  (load cargo_msy_2 plane_atl atl)
+  (fly plane_atl atl msy)
+  (unload cargo_msy_1 plane_atl msy)
+  (unload cargo_msy_2 plane_atl msy)
+  (fly plane_atl msy atl)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cargo.pddl  -p tests/deliver_return_3.pddl -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cargo
+Problem:  deliver_return_3
+Result:   success
+Visited:  62
+Expanded: 1034
+Time:     0:0:94
+Solution: 
+  (load cargo_msy plane_sfo sfo)
+  (fly plane_sfo sfo msy)
+  (load cargo_atl plane_sfo msy)
+  (unload cargo_msy plane_sfo msy)
+  (fly plane_sfo msy atl)
+  (load cargo_sfo plane_sfo atl)
+  (unload cargo_atl plane_sfo atl)
+  (fly plane_sfo atl sfo)
+  (unload cargo_sfo plane_sfo sfo)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/cargo.pddl  -p tests/deliver_return_4.pddl -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   cargo
+Problem:  deliver_return_4
+Result:   success
+Visited:  104
+Expanded: 2360
+Time:     0:0:250
+Solution: 
+  (load cargo_msy plane_sfo sfo)
+  (fly plane_sfo sfo msy)
+  (unload cargo_msy plane_sfo msy)
+  (load cargo_atl plane_sfo msy)
+  (load cargo_dfw plane_sfo msy)
+  (fly plane_sfo msy atl)
+  (load cargo_sfo plane_sfo atl)
+  (unload cargo_atl plane_sfo atl)
+  (fly plane_sfo atl dfw)
+  (unload cargo_dfw plane_sfo dfw)
+  (fly plane_sfo dfw sfo)
+  (unload cargo_sfo plane_sfo sfo)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/wumpus.pddl -p tests/easy_wumpus.pddl      -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   wumpus
+Problem:  easy_wumpus
+Result:   success
+Visited:  3
+Expanded: 18
+Time:     0:0:94
+Solution: 
+  (move a1 a2)
+  (grab a2)
+  (move a2 a1)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/wumpus.pddl -p tests/medium_wumpus.pddl    -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   wumpus
+Problem:  medium_wumpus
+Result:   success
+Visited:  25
+Expanded: 164
+Time:     0:0:875
+Solution: 
+  (move a1 b1)
+  (move b1 b2)
+  (move b2 b3)
+  (grab b3)
+  (move b3 b2)
+  (move b2 a2)
+  (move a2 a1)
+
+C:\Users\sgware\Desktop\project 3 - planning\grade>java -Xms8g -Xmx8g -XX:NewSize=4g -jar planning.jar ../mbhatt.jar -d tests/wumpus.pddl -p tests/hard_wumpus.pddl      -nl 100000 -tl 1800000 
+Planner:  mbhatt
+Domain:   wumpus
+Problem:  hard_wumpus
+Result:   success
+Visited:  289
+Expanded: 1744
+Time:     0:2:187
+Solution: 
+  (move a1 b1)
+  (move b1 c1)
+  (move c1 d1)
+  (move d1 d2)
+  (move d2 d3)
+  (move d3 c3)
+  (move c3 c4)
+  (grab c4)
+  (move c4 c3)
+  (move c3 d3)
+  (move d3 d2)
+  (move d2 d1)
+  (move d1 c1)
+  (move c1 b1)
+  (move b1 a1)
