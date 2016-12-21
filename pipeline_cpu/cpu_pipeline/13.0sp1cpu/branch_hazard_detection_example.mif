@@ -1,0 +1,22 @@
+DEPTH = 256;
+WIDTH = 32;
+--Display in Hexidecimal Format
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+CONTENT
+BEGIN
+--Default Instruction Memory Vales
+[00..FF] : 00000000;
+--Initialized Instruction Memory
+--PC Instruction
+00: 00885022; --00: SUB $10, $4, $8 --> $10 (A) = $4 - $8 = 0xFC
+01: 10630007; --04: BEQ $3, $3, 7 --> if $3 = $3, 03 + 03 + 07 = 09
+02: 00456024; --08: AND $12, $2, $5 --> $12 (C)= 2 & 5 = 0
+03: 00466825; --0C: OR $13, $2, $6 --> $13 (D)= 2 OR 6 = 0x06
+04: 00827020; --10: ADD $14, $4, $2 --> $14 (E)= 4 + 2 = 0x06
+05: 00C7782A; --14: SLT $15, $6, $7 --> if 6 < 7 ... $15 (F)= 1
+06: 00000020; --18: nop
+07: 00000020; --1C: nop
+08: 00000020; --20: nop
+09: 00452020; --24: ADD $4, $2, $5 --> $4 = 0x02 + 0x05 = 0x07
+End;

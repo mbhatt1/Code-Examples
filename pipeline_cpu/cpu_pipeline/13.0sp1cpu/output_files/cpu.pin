@@ -1,0 +1,561 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:	2.5V
+ --					Bank 9:	2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --           	    either individually through a 10k Ohm resistor to GND or tie all pins
+ --           	    together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+CHIP  "cpu"  ASSIGNED TO AN: EP4CGX30CF23C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+Instruction_out[1]           : A1        : output : 2.5 V             :         : 8         : N              
+ALU_Input_1_out[0]           : A2        : output : 2.5 V             :         : 8         : N              
+RegWriteData_out[7]          : A3        : output : 2.5 V             :         : 8         : N              
+Mem_Address_out[6]           : A4        : output : 2.5 V             :         : 8         : N              
+ALU_Input_1_out[6]           : A5        : output : 2.5 V             :         : 8         : N              
+ALU_Input_1_out[2]           : A6        : output : 2.5 V             :         : 8         : N              
+IDEX_Register_Rs_out[4]      : A7        : output : 2.5 V             :         : 8         : N              
+Instruction_out[0]           : A8        : output : 2.5 V             :         : 8         : N              
+GND+                         : A9        :        :                   :         : 7         :                
+IF_AddResult_out[4]          : A10       : output : 2.5 V             :         : 7         : N              
+MEMWB_Read_Data_out[1]       : A11       : output : 2.5 V             :         : 7         : N              
+IF_ReadData2_out[4]          : A12       : output : 2.5 V             :         : 7         : N              
+MemReadData_out[6]           : A13       : output : 2.5 V             :         : 7         : N              
+MemWrite_Data_out[5]         : A14       : output : 2.5 V             :         : 7         : N              
+IF_Zero_out[3]               : A15       : output : 2.5 V             :         : 7         : N              
+Instruction_out[6]           : A16       : output : 2.5 V             :         : 7         : N              
+STALL_out                    : A17       : output : 2.5 V             :         : 7         : N              
+IFID_Register_Rt_out[0]      : A18       : output : 2.5 V             :         : 7         : N              
+IF_ReadData2_out[1]          : A19       : output : 2.5 V             :         : 7         : N              
+IF_Zero_out[4]               : A20       : output : 2.5 V             :         : 6         : N              
+IFID_Register_Rt_out[4]      : A21       : output : 2.5 V             :         : 6         : N              
+IDEX_Register_Rt_out[4]      : A22       : output : 2.5 V             :         : 6         : N              
+GND                          : AA1       : gnd    :                   :         :           :                
+GND                          : AA2       : gnd    :                   :         :           :                
+NC                           : AA3       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   :         : 3         :                
+GND                          : AA5       : gnd    :                   :         :           :                
+IF_ReadData2_out[7]          : AA6       : output : 2.5 V             :         : 3         : N              
+Read_Data2_out[7]            : AA7       : output : 2.5 V             :         : 3         : N              
+GND                          : AA8       : gnd    :                   :         :           :                
+IF_PCPlus4_out[4]            : AA9       : output : 2.5 V             :         : 3         : N              
+IF_Branch_out                : AA10      : output : 2.5 V             :         : 3         : N              
+GND                          : AA11      : gnd    :                   :         :           :                
+GND+                         : AA12      :        :                   :         : 4         :                
+Instruction_out[28]          : AA13      : output : 2.5 V             :         : 4         : N              
+GND                          : AA14      : gnd    :                   :         :           :                
+ALU_Input_1_out[4]           : AA15      : output : 2.5 V             :         : 4         : N              
+EXMEM_ALU_Result_out[0]      : AA16      : output : 2.5 V             :         : 4         : N              
+GND                          : AA17      : gnd    :                   :         :           :                
+IDEX_Register_Rt_out[1]      : AA18      : output : 2.5 V             :         : 4         : N              
+Instruction_out[21]          : AA19      : output : 2.5 V             :         : 4         : N              
+Instruction_out[27]          : AA20      : output : 2.5 V             :         : 4         : N              
+IFID_Register_Rs_out[3]      : AA21      : output : 2.5 V             :         : 4         : N              
+Read_Data1_out[3]            : AA22      : output : 2.5 V             :         : 4         : N              
+RREF                         : AB1       :        :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AB3       : output : 2.5 V             :         : 3         : N              
+Read_Data2_out[3]            : AB4       : output : 2.5 V             :         : 3         : N              
+IF_ReadData1_out[0]          : AB5       : output : 2.5 V             :         : 3         : N              
+Read_Data1_out[0]            : AB6       : output : 2.5 V             :         : 3         : N              
+Instruction_out[11]          : AB7       : output : 2.5 V             :         : 3         : N              
+EXMEM_Register_Rd_out[4]     : AB8       : output : 2.5 V             :         : 3         : N              
+EXMEM_ALU_Result_out[5]      : AB9       : output : 2.5 V             :         : 3         : N              
+ALU_Result_out[1]            : AB10      : output : 2.5 V             :         : 3         : N              
+ALU_Result_out[7]            : AB11      : output : 2.5 V             :         : 3         : N              
+GND+                         : AB12      :        :                   :         : 4         :                
+IF_AddResult_out[7]          : AB13      : output : 2.5 V             :         : 4         : N              
+MEMWB_Read_Data_out[2]       : AB14      : output : 2.5 V             :         : 4         : N              
+ALU_Input_1_out[1]           : AB15      : output : 2.5 V             :         : 4         : N              
+MemWrite_Data_out[4]         : AB16      : output : 2.5 V             :         : 4         : N              
+ALU_Input_1_out[5]           : AB17      : output : 2.5 V             :         : 4         : N              
+ALU_Input_2_out[7]           : AB18      : output : 2.5 V             :         : 4         : N              
+IF_Zero_out[5]               : AB19      : output : 2.5 V             :         : 4         : N              
+Instruction_out[30]          : AB20      : output : 2.5 V             :         : 4         : N              
+IFID_Register_Rs_out[0]      : AB21      : output : 2.5 V             :         : 4         : N              
+IF_ReadData1_out[6]          : AB22      : output : 2.5 V             :         : 4         : N              
+MemReadData_out[4]           : B1        : output : 2.5 V             :         : 8         : N              
+GND                          : B2        : gnd    :                   :         :           :                
+Mem_Address_out[7]           : B3        : output : 2.5 V             :         : 8         : N              
+EXMEM_RegWrite_out           : B4        : output : 2.5 V             :         : 8         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+EXMEM_ALU_Result_out[2]      : B6        : output : 2.5 V             :         : 8         : N              
+ALU_Result_out[0]            : B7        : output : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+GND+                         : B9        :        :                   :         : 7         :                
+Instruction_out[8]           : B10       : output : 2.5 V             :         : 7         : N              
+GND                          : B11       : gnd    :                   :         :           :                
+IDEX_MemRead_out             : B12       : output : 2.5 V             :         : 7         : N              
+ALU_Input_2_out[4]           : B13       : output : 2.5 V             :         : 7         : N              
+GND                          : B14       : gnd    :                   :         :           :                
+IF_ReadData2_out[6]          : B15       : output : 2.5 V             :         : 7         : N              
+WriteRegister_out[2]         : B16       : output : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+WriteRegister_out[1]         : B18       : output : 2.5 V             :         : 7         : N              
+MemReadData_out[5]           : B19       : output : 2.5 V             :         : 6         : N              
+Zero_out                     : B20       : output : 2.5 V             :         : 6         : N              
+ALU_Input_1_out[7]           : B21       : output : 2.5 V             :         : 6         : N              
+ForwardB_out[0]              : B22       : output : 2.5 V             :         : 6         : N              
+Read_Data1_out[5]            : C1        : output : 2.5 V             :         : 8         : N              
+ALU_Input_2_out[6]           : C2        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+Instruction_out[13]          : C4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+Mem_Address_out[5]           : C6        : output : 2.5 V             :         : 8         : N              
+IF_ReadData1_out[5]          : C7        : output : 2.5 V             :         : 8         : N              
+RegWriteData_out[5]          : C8        : output : 2.5 V             :         : 8         : N              
+EXMEM_Register_Rd_out[2]     : C9        : output : 2.5 V             :         : 8         : N              
+EXMEM_ALU_Result_out[4]      : C10       : output : 2.5 V             :         : 7         : N              
+IF_SignExtend_out[0]         : C11       : output : 2.5 V             :         : 7         : N              
+MemWrite_Data_out[0]         : C12       : output : 2.5 V             :         : 7         : N              
+Mem_Address_out[2]           : C13       : output : 2.5 V             :         : 7         : N              
+RegWriteData_out[1]          : C14       : output : 2.5 V             :         : 7         : N              
+IF_Zero_out[6]               : C15       : output : 2.5 V             :         : 7         : N              
+MEMWB_Register_Rd_out[3]     : C16       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
+IF_ReadData2_out[5]          : C19       : output : 2.5 V             :         : 6         : N              
+Read_Data2_out[5]            : C20       : output : 2.5 V             :         : 6         : N              
+GND                          : C21       : gnd    :                   :         :           :                
+RegWriteData_out[2]          : C22       : output : 2.5 V             :         : 6         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D1        : input  : 2.5 V             :         : 9         : N              
+nCE                          : D2        :        :                   :         : 9         :                
+~ALTERA_DCLK~                : D3        : output : 2.5 V             :         : 9         : N              
+Read_Data1_out[1]            : D4        : output : 2.5 V             :         : 8         : N              
+RegWriteData_out[4]          : D5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+MemWrite_Data_out[1]         : D7        : output : 2.5 V             :         : 8         : N              
+IF_BranchNE_out              : D8        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
+PC[1]                        : D10       : output : 2.5 V             :         : 8         : N              
+Branch_NE_out                : D11       : output : 2.5 V             :         : 8         : N              
+ForwardA_out[1]              : D12       : output : 2.5 V             :         : 8         : N              
+EXMEM_ALU_Result_out[6]      : D13       : output : 2.5 V             :         : 7         : N              
+Read_Data2_out[6]            : D14       : output : 2.5 V             :         : 7         : N              
+IFID_Register_Rs_out[2]      : D15       : output : 2.5 V             :         : 7         : N              
+MemReadData_out[0]           : D16       : output : 2.5 V             :         : 7         : N              
+Read_Data2_out[1]            : D17       : output : 2.5 V             :         : 7         : N              
+GND                          : D18       : gnd    :                   :         :           :                
+EXMEM_ALU_Result_out[1]      : D19       : output : 2.5 V             :         : 6         : N              
+PC[3]                        : D20       : output : 2.5 V             :         : 6         : N              
+MEMWB_Read_Data_out[7]       : D21       : output : 2.5 V             :         : 6         : N              
+IF_AddResult_out[3]          : D22       : output : 2.5 V             :         : 6         : N              
+GND                          : E1        : gnd    :                   :         :           :                
+GND                          : E2        : gnd    :                   :         :           :                
+TDO                          : E3        : output :                   :         : 9         :                
+TCK                          : E4        : input  :                   :         : 9         :                
+IF_ReadData1_out[1]          : E5        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
+GND                          : E7        : gnd    :                   :         :           :                
+IF_ReadData1_out[4]          : E8        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : E10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : E11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : E12       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : E13       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : E14       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : E15       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+IDEX_Register_Rs_out[1]      : E17       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL                     : E18       : power  :                   : 1.2V    :           :                
+GND                          : E19       : gnd    :                   :         :           :                
+WriteRegister_out[4]         : E20       : output : 2.5 V             :         : 6         : N              
+IF_Zero_out[0]               : E21       : output : 2.5 V             :         : 6         : N              
+WriteRegister_out[3]         : E22       : output : 2.5 V             :         : 6         : N              
+GXB_NC                       : F1        :        :                   :         : QL0       :                
+GXB_NC                       : F2        :        :                   :         : QL0       :                
+GND                          : F3        : gnd    :                   :         :           :                
+VCCA                         : F4        : power  :                   : 2.5V    :           :                
+TDI                          : F5        : input  :                   :         : 9         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F6        :        :                   :         : 8         :                
+VCCINT                       : F7        : power  :                   : 1.2V    :           :                
+Read_Data1_out[4]            : F8        : output : 2.5 V             :         : 8         : N              
+GND                          : F9        : gnd    :                   :         :           :                
+VCCIO8                       : F10       : power  :                   : 2.5V    : 8         :                
+GND                          : F11       : gnd    :                   :         :           :                
+IF_SignExtend_out[5]         : F12       : output : 2.5 V             :         : 7         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+VCCIO7                       : F14       : power  :                   : 2.5V    : 7         :                
+GND                          : F15       : gnd    :                   :         :           :                
+IDEX_Register_Rt_out[2]      : F16       : output : 2.5 V             :         : 7         : N              
+IFID_Register_Rt_out[3]      : F17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 6         :                
+VCCA                         : F19       : power  :                   : 2.5V    :           :                
+IF_PCPlus4_out[3]            : F20       : output : 2.5 V             :         : 6         : N              
+GND                          : F21       : gnd    :                   :         :           :                
+MemWrite_Data_out[6]         : F22       : output : 2.5 V             :         : 6         : N              
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+VCCD_PLL                     : G3        : power  :                   : 1.2V    :           :                
+VCCIO9                       : G4        : power  :                   : 2.5V    : 9         :                
+TMS                          : G5        : input  :                   :         : 9         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 8         :                
+IF_PCPlus4_out[1]            : G7        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+VCCINT                       : G9        : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 8         :                
+Read_Data2_out[4]            : G12       : output : 2.5 V             :         : 7         : N              
+VCCINT                       : G13       : power  :                   : 1.2V    :           :                
+IF_SignExtend_out[4]         : G14       : output : 2.5 V             :         : 7         : N              
+IF_PCPlus4_out[5]            : G15       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 6         :                
+Instruction_out[23]          : G18       : output : 2.5 V             :         : 6         : N              
+Read_Data1_out[7]            : G19       : output : 2.5 V             :         : 6         : N              
+RegWrite_out                 : G20       : output : 2.5 V             :         : 6         : N              
+Mem_Address_out[4]           : G21       : output : 2.5 V             :         : 6         : N              
+IDEX_Register_Rs_out[2]      : G22       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : H1        :        :                   :         : QL0       :                
+GXB_GND*                     : H2        :        :                   :         : QL0       :                
+VCCH_GXB                     : H3        : power  :                   : 2.5V    :           :                
+nCONFIG                      : H4        :        :                   :         : 9         :                
+GND                          : H5        : gnd    :                   :         :           :                
+VCCINT                       : H6        : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 8         :                
+VCC_CLKIN8A                  : H10       : power  :                   : 2.5V    : 8A        :                
+GND                          : H11       : gnd    :                   :         :           :                
+Instruction_out[5]           : H12       : output : 2.5 V             :         : 7         : N              
+ForwardB_out[1]              : H13       : output : 2.5 V             :         : 7         : N              
+MEMWB_RegWrite_out           : H14       : output : 2.5 V             :         : 7         : N              
+IF_ReadData1_out[7]          : H15       : output : 2.5 V             :         : 6         : N              
+WriteRegister_out[0]         : H16       : output : 2.5 V             :         : 6         : N              
+ALU_Input_2_out[1]           : H17       : output : 2.5 V             :         : 6         : N              
+GND                          : H18       : gnd    :                   :         :           :                
+VCCIO6                       : H19       : power  :                   : 2.5V    : 6         :                
+Instruction_out[18]          : H20       : output : 2.5 V             :         : 6         : N              
+MemWrite_out                 : H21       : output : 2.5 V             :         : 6         : N              
+Instruction_out[22]          : H22       : output : 2.5 V             :         : 6         : N              
+GND                          : J1        : gnd    :                   :         :           :                
+GND                          : J2        : gnd    :                   :         :           :                
+VCCA_GXB                     : J3        : power  :                   : 2.5V    :           :                
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : J4        : input  : 2.5 V             :         : 9         : N              
+VCCINT                       : J5        : power  :                   : 1.2V    :           :                
+GND                          : J6        : gnd    :                   :         :           :                
+VCCINT                       : J7        : power  :                   : 1.2V    :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+VCCINT                       : J9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : J10       :        :                   :         : 8A        :                
+VCCINT                       : J11       : power  :                   : 1.2V    :           :                
+MemReadData_out[2]           : J12       : output : 2.5 V             :         : 7         : N              
+IF_AddResult_out[6]          : J13       : output : 2.5 V             :         : 7         : N              
+IF_PCPlus4_out[6]            : J14       : output : 2.5 V             :         : 7         : N              
+Instruction_out[25]          : J15       : output : 2.5 V             :         : 6         : N              
+IDEX_Register_Rt_out[3]      : J16       : output : 2.5 V             :         : 6         : N              
+VCCINT                       : J17       : power  :                   : 1.2V    :           :                
+VCCIO6                       : J18       : power  :                   : 2.5V    : 6         :                
+MemRead_out                  : J19       : output : 2.5 V             :         : 6         : N              
+IF_Zero_out[1]               : J20       : output : 2.5 V             :         : 6         : N              
+Instruction_out[24]          : J21       : output : 2.5 V             :         : 6         : N              
+IF_SignExtend_out[3]         : J22       : output : 2.5 V             :         : 6         : N              
+GXB_NC                       : K1        :        :                   :         : QL0       :                
+GXB_NC                       : K2        :        :                   :         : QL0       :                
+VCCL_GXB                     : K3        : power  :                   : 1.2V    :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : K4        : input  : 2.5 V             :         : 9         : N              
+GND                          : K5        : gnd    :                   :         :           :                
+VCCINT                       : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+VCCINT                       : K8        : power  :                   : 1.2V    :           :                
+GND                          : K9        : gnd    :                   :         :           :                
+GXB_GND*                     : K10       :        :                   :         : 8A        :                
+GND                          : K11       : gnd    :                   :         :           :                
+EXMEM_Register_Rd_out[3]     : K12       : output : 2.5 V             :         : 7         : N              
+MEMWB_Register_Rd_out[4]     : K13       : output : 2.5 V             :         : 6         : N              
+MEMWB_Register_Rd_out[2]     : K14       : output : 2.5 V             :         : 6         : N              
+GND                          : K15       : gnd    :                   :         :           :                
+VCCINT                       : K16       : power  :                   : 1.2V    :           :                
+IFID_Register_Rs_out[1]      : K17       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : K18       : power  :                   : 2.5V    : 6         :                
+Instruction_out[7]           : K19       : output : 2.5 V             :         : 6         : N              
+MemWrite_Data_out[2]         : K20       : output : 2.5 V             :         : 6         : N              
+GND                          : K21       : gnd    :                   :         :           :                
+MemWrite_Data_out[3]         : K22       : output : 2.5 V             :         : 6         : N              
+GND                          : L1        : gnd    :                   :         :           :                
+GND                          : L2        : gnd    :                   :         :           :                
+VCCL_GXB                     : L3        : power  :                   : 1.2V    :           :                
+VCCA                         : L4        : power  :                   : 2.5V    :           :                
+VCCINT                       : L5        : power  :                   : 1.2V    :           :                
+GND                          : L6        : gnd    :                   :         :           :                
+VCCINT                       : L7        : power  :                   : 1.2V    :           :                
+GND                          : L8        : gnd    :                   :         :           :                
+VCCINT                       : L9        : power  :                   : 1.2V    :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+VCCINT                       : L11       : power  :                   : 1.2V    :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+ALU_Input_2_out[0]           : L13       : output : 2.5 V             :         : 5         : N              
+MemWrite_Data_out[7]         : L14       : output : 2.5 V             :         : 5         : N              
+Instruction_out[9]           : L15       : output : 2.5 V             :         : 5         : N              
+IF_PCPlus4_out[2]            : L16       : output : 2.5 V             :         : 5         : N              
+VCCINT                       : L17       : power  :                   : 1.2V    :           :                
+GND                          : L18       : gnd    :                   :         :           :                
+IF_SignExtend_out[2]         : L19       : output : 2.5 V             :         : 6         : N              
+IF_Flush_out                 : L20       : output : 2.5 V             :         : 6         : N              
+GND+                         : L21       :        :                   :         : 6         :                
+GND+                         : L22       :        :                   :         : 6         :                
+GXB_GND*                     : M1        :        :                   :         : QL0       :                
+GXB_GND*                     : M2        :        :                   :         : QL0       :                
+GND                          : M3        : gnd    :                   :         :           :                
+VCCD_PLL                     : M4        : power  :                   : 1.2V    :           :                
+GND                          : M5        : gnd    :                   :         :           :                
+VCCINT                       : M6        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M7        :        :                   :         : 3B        :                
+GXB_GND*                     : M8        :        :                   :         : 3B        :                
+GND                          : M9        : gnd    :                   :         :           :                
+VCCINT                       : M10       : power  :                   : 1.2V    :           :                
+Reset                        : M11       : input  : 2.5 V             :         : 3A        : N              
+VCCINT                       : M12       : power  :                   : 1.2V    :           :                
+Instruction_out[4]           : M13       : output : 2.5 V             :         : 5         : N              
+Instruction_out[29]          : M14       : output : 2.5 V             :         : 5         : N              
+MEMWB_Register_Rd_out[1]     : M15       : output : 2.5 V             :         : 5         : N              
+IF_SignExtend_out[7]         : M16       : output : 2.5 V             :         : 5         : N              
+PC[5]                        : M17       : output : 2.5 V             :         : 5         : N              
+Instruction_out[17]          : M18       : output : 2.5 V             :         : 5         : N              
+IF_SignExtend_out[6]         : M19       : output : 2.5 V             :         : 5         : N              
+HDU_RegWrite_out             : M20       : output : 2.5 V             :         : 5         : N              
+GND+                         : M21       :        :                   :         : 5         :                
+GND+                         : M22       :        :                   :         : 5         :                
+GND                          : N1        : gnd    :                   :         :           :                
+GND                          : N2        : gnd    :                   :         :           :                
+VCCL_GXB                     : N3        : power  :                   : 1.2V    :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCINT                       : N5        : power  :                   : 1.2V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+GXB_GND*                     : N7        :        :                   :         : 3B        :                
+GXB_GND*                     : N8        :        :                   :         : 3B        :                
+VCCINT                       : N9        : power  :                   : 1.2V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+Clock                        : N11       : input  : 2.5 V             :         : 3A        : N              
+VCC_CLKIN3A                  : N12       : power  :                   : 2.5V    : 3A        :                
+Instruction_out[15]          : N13       : output : 2.5 V             :         : 5         : N              
+PC[2]                        : N14       : output : 2.5 V             :         : 5         : N              
+IF_ReadData2_out[0]          : N15       : output : 2.5 V             :         : 5         : N              
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+HDU_MemWrite_out             : N17       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : N18       : power  :                   : 2.5V    : 5         :                
+ALU_Result_out[3]            : N19       : output : 2.5 V             :         : 5         : N              
+ALU_Result_out[5]            : N20       : output : 2.5 V             :         : 5         : N              
+MemReadData_out[1]           : N21       : output : 2.5 V             :         : 5         : N              
+IFID_Register_Rs_out[4]      : N22       : output : 2.5 V             :         : 5         : N              
+GXB_NC                       : P1        :        :                   :         : QL0       :                
+GXB_NC                       : P2        :        :                   :         : QL0       :                
+VCCH_GXB                     : P3        : power  :                   : 2.5V    :           :                
+MSEL3                        : P4        :        :                   :         : 3         :                
+MSEL1                        : P5        :        :                   :         : 3         :                
+VCCINT                       : P6        : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : P7        : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : P8        : power  :                   : 1.2V    :           :                
+GND                          : P9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P10       :        :                   :         : 3         :                
+GND                          : P11       : gnd    :                   :         :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+RegWriteData_out[6]          : P13       : output : 2.5 V             :         : 5         : N              
+IFID_Register_Rt_out[1]      : P14       : output : 2.5 V             :         : 5         : N              
+Read_Data1_out[2]            : P15       : output : 2.5 V             :         : 5         : N              
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCIO5                       : P19       : power  :                   : 2.5V    : 5         :                
+Instruction_out[10]          : P20       : output : 2.5 V             :         : 5         : N              
+GND                          : P21       : gnd    :                   :         :           :                
+Instruction_out[26]          : P22       : output : 2.5 V             :         : 5         : N              
+GND                          : R1        : gnd    :                   :         :           :                
+GND                          : R2        : gnd    :                   :         :           :                
+VCCA_GXB                     : R3        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : R4        : power  :                   : 1.2V    :           :                
+MSEL2                        : R5        :        :                   :         : 3         :                
+GND                          : R6        : gnd    :                   :         :           :                
+VCCINT                       : R7        : power  :                   : 1.2V    :           :                
+nSTATUS                      : R8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R9        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 3         :                
+GND                          : R12       : gnd    :                   :         :           :                
+EXMEM_ALU_Result_out[7]      : R13       : output : 2.5 V             :         : 4         : N              
+ALU_Result_out[4]            : R14       : output : 2.5 V             :         : 4         : N              
+Mem_Address_out[1]           : R15       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
+Instruction_out[31]          : R17       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : R18       : power  :                   : 2.5V    : 5         :                
+IF_Zero_out[7]               : R19       : output : 2.5 V             :         : 5         : N              
+Read_Data2_out[2]            : R20       : output : 2.5 V             :         : 5         : N              
+Instruction_out[19]          : R21       : output : 2.5 V             :         : 5         : N              
+MEMWB_Register_Rd_out[0]     : R22       : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : T1        :        :                   :         : QL0       :                
+GXB_GND*                     : T2        :        :                   :         : QL0       :                
+VCCL_GXB                     : T3        : power  :                   : 1.2V    :           :                
+GND                          : T4        : gnd    :                   :         :           :                
+VCCA                         : T5        : power  :                   : 2.5V    :           :                
+MSEL0                        : T6        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T9        :        :                   :         : 3         :                
+VCCINT                       : T10       : power  :                   : 1.2V    :           :                
+PC[0]                        : T11       : output : 2.5 V             :         : 3         : N              
+VCCINT                       : T12       : power  :                   : 1.2V    :           :                
+IF_AddResult_out[2]          : T13       : output : 2.5 V             :         : 4         : N              
+IF_AddResult_out[5]          : T14       : output : 2.5 V             :         : 4         : N              
+Instruction_out[20]          : T15       : output : 2.5 V             :         : 4         : N              
+IDEX_Register_Rt_out[0]      : T16       : output : 2.5 V             :         : 4         : N              
+IF_Zero_out[2]               : T17       : output : 2.5 V             :         : 5         : N              
+EXMEM_Register_Rd_out[0]     : T18       : output : 2.5 V             :         : 5         : N              
+IDEX_Register_Rs_out[0]      : T19       : output : 2.5 V             :         : 5         : N              
+PC[4]                        : T20       : output : 2.5 V             :         : 5         : N              
+Mem_Address_out[3]           : T21       : output : 2.5 V             :         : 5         : N              
+IF_ReadData2_out[2]          : T22       : output : 2.5 V             :         : 5         : N              
+GND                          : U1        : gnd    :                   :         :           :                
+GND                          : U2        : gnd    :                   :         :           :                
+GND                          : U3        : gnd    :                   :         :           :                
+VCCD_PLL                     : U4        : power  :                   : 1.2V    :           :                
+CONF_DONE                    : U5        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 3         :                
+VCCIO3                       : U8        : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : U9        : power  :                   : 2.5V    : 3         :                
+GND                          : U10       : gnd    :                   :         :           :                
+VCCIO3                       : U11       : power  :                   : 2.5V    : 3         :                
+Branch_out                   : U12       : output : 2.5 V             :         : 3         : N              
+VCCIO4                       : U13       : power  :                   : 2.5V    : 4         :                
+IF_SignExtend_out[1]         : U14       : output : 2.5 V             :         : 4         : N              
+IF_PCPlus4_out[7]            : U15       : output : 2.5 V             :         : 4         : N              
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+RegWriteData_out[3]          : U18       : output : 2.5 V             :         : 5         : N              
+VCCA                         : U19       : power  :                   : 2.5V    :           :                
+ALU_Input_2_out[2]           : U20       : output : 2.5 V             :         : 5         : N              
+GND                          : U21       : gnd    :                   :         :           :                
+PC[6]                        : U22       : output : 2.5 V             :         : 5         : N              
+GXB_NC                       : V1        :        :                   :         : QL0       :                
+GXB_NC                       : V2        :        :                   :         : QL0       :                
+VCCL_GXB                     : V3        : power  :                   : 1.2V    :           :                
+VCCA                         : V4        : power  :                   : 2.5V    :           :                
+GND                          : V5        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V7        :        :                   :         : 3         :                
+GND                          : V8        : gnd    :                   :         :           :                
+IF_PCPlus4_out[0]            : V9        : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : V10       : power  :                   : 2.5V    : 3         :                
+GND                          : V11       : gnd    :                   :         :           :                
+VCCIO3                       : V12       : power  :                   : 2.5V    : 3         :                
+ALU_Input_1_out[3]           : V13       : output : 2.5 V             :         : 4         : N              
+GND                          : V14       : gnd    :                   :         :           :                
+VCCIO4                       : V15       : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : V16       : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : V17       : power  :                   : 2.5V    : 4         :                
+VCCD_PLL                     : V18       : power  :                   : 1.2V    :           :                
+GND                          : V19       : gnd    :                   :         :           :                
+EXMEM_ALU_Result_out[3]      : V20       : output : 2.5 V             :         : 5         : N              
+IDEX_Register_Rs_out[3]      : V21       : output : 2.5 V             :         : 5         : N              
+ForwardA_out[0]              : V22       : output : 2.5 V             :         : 5         : N              
+GND                          : W1        : gnd    :                   :         :           :                
+GND                          : W2        : gnd    :                   :         :           :                
+VCCA_GXB                     : W3        : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W4        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W5        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W6        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W7        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   :         : 3         :                
+Instruction_out[3]           : W9        : output : 2.5 V             :         : 3         : N              
+MEMWB_Read_Data_out[3]       : W10       : output : 2.5 V             :         : 3         : N              
+PC[7]                        : W11       : output : 2.5 V             :         : 3         : N              
+ALU_Result_out[2]            : W12       : output : 2.5 V             :         : 3         : N              
+EXMEM_Register_Rd_out[1]     : W13       : output : 2.5 V             :         : 4         : N              
+MEMWB_Read_Data_out[6]       : W14       : output : 2.5 V             :         : 4         : N              
+IF_AddResult_out[0]          : W15       : output : 2.5 V             :         : 4         : N              
+Instruction_out[2]           : W16       : output : 2.5 V             :         : 4         : N              
+RegWriteData_out[0]          : W17       : output : 2.5 V             :         : 4         : N              
+IFID_Register_Rt_out[2]      : W18       : output : 2.5 V             :         : 4         : N              
+Read_Data1_out[6]            : W19       : output : 2.5 V             :         : 4         : N              
+MemReadData_out[7]           : W20       : output : 2.5 V             :         : 5         : N              
+Instruction_out[16]          : W21       : output : 2.5 V             :         : 5         : N              
+Read_Data2_out[0]            : W22       : output : 2.5 V             :         : 5         : N              
+GXB_GND*                     : Y1        :        :                   :         : QL0       :                
+GXB_GND*                     : Y2        :        :                   :         : QL0       :                
+NC                           : Y3        :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y4        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 3         :                
+IF_ReadData2_out[3]          : Y7        : output : 2.5 V             :         : 3         : N              
+Instruction_out[12]          : Y8        : output : 2.5 V             :         : 3         : N              
+MEMWB_Read_Data_out[5]       : Y9        : output : 2.5 V             :         : 3         : N              
+MEMWB_Read_Data_out[4]       : Y10       : output : 2.5 V             :         : 3         : N              
+MEMWB_Read_Data_out[0]       : Y11       : output : 2.5 V             :         : 3         : N              
+ALU_Result_out[6]            : Y12       : output : 2.5 V             :         : 3         : N              
+Instruction_out[14]          : Y13       : output : 2.5 V             :         : 4         : N              
+ALU_Input_2_out[3]           : Y14       : output : 2.5 V             :         : 4         : N              
+IF_AddResult_out[1]          : Y15       : output : 2.5 V             :         : 4         : N              
+ALU_Input_2_out[5]           : Y16       : output : 2.5 V             :         : 4         : N              
+MemReadData_out[3]           : Y17       : output : 2.5 V             :         : 4         : N              
+Mem_Address_out[0]           : Y18       : output : 2.5 V             :         : 4         : N              
+IF_ReadData1_out[3]          : Y19       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y20       :        :                   :         : 4         :                
+GND                          : Y21       : gnd    :                   :         :           :                
+IF_ReadData1_out[2]          : Y22       : output : 2.5 V             :         : 5         : N              

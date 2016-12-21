@@ -1,0 +1,6 @@
+Implements Pipelined MIPS CPU in VHDL (Quartus)
+Implements Forwarding, Stalling and Dynamic Code Rescheduling 
+
+@author: Manish Bhatt
+@affiliation: University of New Orleans
+

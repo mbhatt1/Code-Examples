@@ -1,0 +1,21 @@
+DEPTH = 256;
+WIDTH = 32;
+--Display in Hexidecimal Format
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+CONTENT
+BEGIN
+--Initialized Data Memory Values
+--00 : 55;
+--01 : AA;
+--02 : 11;
+--03 : 33;
+--Default Instruction Memory Vales
+[00..FF] : 00000000;
+--PC: Instruction Description:
+00: 8C220014; --00: LW $2, 20($1) $2 = mem(20 + $1) = mem(0x14 + 0x01) = 0x15
+01: 00452024; --04: AND $4, $2, $5 $4 = 0x15 AND 0x05 = 0x05
+02: 00464025; --08: OR $8, $2, $6 $8 = 0x15 OR 0x06 = 0x17
+03: 00824820; --0C: ADD $9, $4, $2 $9 = 0x05 + 0x15 = 0x1A
+04: 00C7082A; --10: SLT $1, $6, $7 $1 = 0x06 SLT 0x07 = 0x01
+END;

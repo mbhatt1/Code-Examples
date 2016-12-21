@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="cpu">
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|Ifetch:IFE|altsyncram:inst_memory" CBX_FILE_NAME="altsyncram_19q3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cpu|dmemory:MEM|altsyncram:data_memory" CBX_FILE_NAME="altsyncram_ftp3.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
